@@ -7,5 +7,8 @@ var TriangleClassifier = function() {
   	if (x == y && y == z) {
   		return "equilateral";
   	}
+  	if ((x == y && x != z) || (x == z && x != y)) {
+  		return "isosceles"
+  	}
   };
 };
