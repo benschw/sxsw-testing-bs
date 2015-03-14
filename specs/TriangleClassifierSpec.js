@@ -29,5 +29,12 @@ describe('TriangleClassifier', function() {
     var result = new TriangleClassifier().classify(5,6,5);
     expect(result).toEqual('isosceles');
   });
+
+  it('throws an ArgumentError when invalid 1,2,5', function() {
+	expect(function() {
+	  var result = new TriangleClassifier().classify(1,2,5);
+	}).toThrow();
+
+  });
 });
 

@@ -1,6 +1,9 @@
 var TriangleClassifier = function() {
 
   this.classify = function(x, y, z) {
+  	if (x + y < z || y + z < x || x + z < y) {
+  		throw "ArgumentError";
+  	}
   	if (x != y && y != z && z != x) {
 	    return "scalene";
   	}
@@ -8,7 +11,7 @@ var TriangleClassifier = function() {
   		return "equilateral";
   	}
   	if ((x == y && x != z) || (x == z && x != y)) {
-  		return "isosceles"
+  		return "isosceles";
   	}
   };
 };
