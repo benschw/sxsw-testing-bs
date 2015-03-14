@@ -21,5 +21,9 @@ describe('TriangleClassifier', function() {
     var result = new TriangleClassifier().classify(4,3,2);
     expect(result).toEqual('scalene');
   });
+  it('classifies as equilateral 5,5,5', function() {
+    var result = new TriangleClassifier().classify(5,5,5);
+    expect(result).toEqual('equilateral');
+  });
 });
 
