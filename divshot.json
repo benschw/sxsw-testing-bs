@@ -1,5 +1,5 @@
 {
-  "name": "br-frontend-testing-flow",
+  "name": "sxsw-testing-bs",
   "root": "dist",
   "clean_urls": true,
   "error_page": "error.html"
